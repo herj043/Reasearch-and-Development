@@ -1,20 +1,13 @@
-import schedule as date
-date.dope()
-def guess():
-  win = input("Type Something: ")
-  
-  if "OP".lower() in win.lower():
-    print("yes")
-  else:
-    guess()
+from tkinter import *
+import n
+n.test()
+window = Tk()
+window.geometry("420x420")
+window.title("My first GUI program")
+label = Label(window,text="Hello World")
+label.pack()
 
-guess()
-cont = "zero"
-while "no".lower() not in cont.lower():
-  cont = input("Would you like to play again? (Yes/No) ")
-  if "yes" in cont.lower():
-    guess()
-  if "no" in cont.lower():
-    print("Thanks for testing!")
-  else:
-    print("unaccepted statement")
+
+window.config(background="#000000")
+
+window.mainloop()
