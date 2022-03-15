@@ -1,13 +1,14 @@
 from tkinter import *
-import n
-n.test()
-window = Tk()
-window.geometry("420x420")
-window.title("My first GUI program")
-label = Label(window,text="Hello World")
-label.pack()
 
+win = Tk()
+win.geometry("480x200")
+win.title("My first GUI program")
+label = Label(win,text="Hello World") 
+label1 = Label(win,text="Howdy! What does a mere human have to do here?")
 
-window.config(background="#000000")
+label.grid(row=1,column=0)
+label1.grid(row=0,column=0)
 
-window.mainloop()
+win.config(background="#333333")
+
+win.mainloop()
